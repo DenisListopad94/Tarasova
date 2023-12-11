@@ -1,27 +1,24 @@
-# task 1
-# def gen2(x,y,z):
-#    for i in range (x, y+1):
-#        print(i**z)
+#task 1
+# def generate_list():
+#     generate = [i**2 for i in range(1, 11)]
+#     return generate
+#
+# print(generate_list())
 
-# gen2(1,10,2)
 
-
-# task 2
-#def krat35(x, y):
-#    for i in range(x, y):
-#        if i % 3 == 0 and i % 5 == 0:
-#            print(i)
-
-#krat35(100, 1000)
+#task 2
+# def generate_list():
+#     generate = [i for i in range (100,1000) if i%3==0 and i%5==0]
+#     return generate
+# print(generate_list())
 
 #task 3
-# def gen(numbers):
-#     for i in range(numbers[0], numbers[1] + 1):
-#         print(i ** numbers[2])
-#
-# input_numbers = list(map(int, input('Please enter three numbers separated by space:').split()))
-# gen(input_numbers)
-
+# def generate_list():
+#     input_numbers = list(map(int, input('Please enter three numbers separated by space: ').split()))
+#     generate = [i ** input_numbers[2] for i in range(input_numbers[0], input_numbers[1] + 1)]
+#     return generate
+# result_list = generate_list()
+# print(result_list)
 
 #task 4
 # def line(string1):
@@ -74,14 +71,11 @@
 
 # task 8
 # def closest_mod_5(x):
-#     y = x
-#     while y % 5 != 0:
-#         y += 1
-#     return y
+#     return x + (5 - x % 5) % 5
 #
 # x = int(input("Enter your number: "))
 # result = closest_mod_5(x)
-# print("Closest number being multiple of 5 and >= than", x,"is", result)
+# print("Closest number being multiple of 5 and >= than", x, "is", result)
 
 #task 9
 # def modify_list(lst):
